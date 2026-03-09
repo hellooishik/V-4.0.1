@@ -5,167 +5,188 @@
 get_header();
 ?>
 
-<canvas id="canvas-stars"></canvas>
-
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="content-overlay">
-            
-            <div class="logo-wrapper">
-                <div class="logo-heart">♥</div>
+    <!-- Modern Split Hero Section -->
+    <section class="hero-section modern-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="logo-wrapper">
+                    <div class="logo-heart">♥</div>
+                </div>
+                <h1>UKDating</h1>
+                <p>We set up users on blind dates, matching people based on their availability, sexual orientation, and location. Experience the next generation of genuine connection.</p>
+                <div class="hero-buttons">
+                    <a href="<?php echo home_url('/join'); ?>" class="cta-btn primary-btn">Join the Revolution</a>
+                    <a href="#mission" class="cta-btn secondary-btn glass-btn">Our Mission</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><strong>50k+</strong> <span>Connections</span></div>
+                    <div class="stat"><strong>120+</strong> <span>Cities</span></div>
+                </div>
             </div>
-
-            <h1>UKDating</h1>
-            <p>We set up users on blind dates, matching people based on their availability, sexual orientation and location.</p>
             
-            <a href="<?php echo home_url('/join'); ?>" class="cta-btn">Join the next dating revolution</a>
-            
+            <div class="hero-visual">
+                <!-- Move canvas here so it's a specific object rather than a background -->
+                <canvas id="canvas-stars"></canvas>
+                <div class="glow-orb"></div>
+            </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features-section">
-        <div class="features-container">
-            <div class="feature-item fade-in">
+    <!-- Alternating Zig-Zag Features -->
+    <section class="features-section modern-features">
+        <div class="feature-row">
+            <div class="feature-text fade-in-scroll">
                 <div class="feature-icon">🌍</div>
-                <p>Verified Profiles</p>
+                <h2>Verified Real Profiles</h2>
+                <p>We believe in genuine human connection, not digital personas. Every user is verified to ensure you meet real people, not curated or fake profiles.</p>
             </div>
-            <div class="feature-item fade-in">
+            <div class="feature-image glass-panel fade-in-scroll">
+                <div class="mock-ui">
+                    <div class="mock-header"></div>
+                    <div class="mock-body mock-verified"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="feature-row reverse">
+            <div class="feature-text fade-in-scroll">
                 <div class="feature-icon">💬</div>
-                <p>Real Conversations</p>
+                <h2>Meaningful Conversations</h2>
+                <p>Skip the endless messaging. Have meaningful conversations face-to-face where real chemistry happens organically and naturally.</p>
             </div>
-            <div class="feature-item fade-in">
+            <div class="feature-image glass-panel fade-in-scroll">
+                <div class="mock-ui">
+                    <div class="mock-bubbles">
+                        <div class="mock-bubble left"></div>
+                        <div class="mock-bubble right"></div>
+                        <div class="mock-bubble left"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-row">
+            <div class="feature-text fade-in-scroll">
                 <div class="feature-icon">⚙️</div>
-                <p>Smart Matching</p>
+                <h2>Intelligent Matching</h2>
+                <p>Forget the superficial left-right game. We provide curated introductions based on deep compatibility, availability, and shared values.</p>
             </div>
-            <div class="feature-item fade-in">
-                <div class="feature-icon">📍</div>
-                <p>Location Based</p>
-            </div>
-            <div class="feature-item fade-in">
-                <div class="feature-icon">🔒</div>
-                <p>Secure & Private</p>
+            <div class="feature-image glass-panel fade-in-scroll">
+                <div class="mock-ui">
+                    <div class="mock-radar"></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Three Pillars Section -->
-    <section class="pillars-section">
-        <h2>Our Core Pillars</h2>
-        <p class="pillars-subtitle">What sets us apart</p>
+    <!-- Bento Box Pillars Section -->
+    <section class="bento-section">
+        <div class="bento-header">
+            <h2>The UKDating Difference</h2>
+            <p>Our core philosophy for modern romance</p>
+        </div>
         
-        <div class="pillars-container">
-            <div class="pillar pillar-zoom">
-                <div class="pillar-icon">👥</div>
-                <h3>No Profiles</h3>
-                <p>We believe in genuine human connection, not digital personas. Meet real people, not curated profiles.</p>
+        <div class="bento-grid">
+            <div class="bento-box bento-large glass-panel">
+                <div class="bento-content">
+                    <div class="bento-icon">👥</div>
+                    <h3>No Curated Profiles</h3>
+                    <p>Meet real people, exactly as they are. We strip away the digital filters to bring you genuine face-to-face connections from day one.</p>
+                </div>
             </div>
-            <div class="pillar pillar-zoom">
-                <div class="pillar-icon">💬</div>
-                <h3>No Texting</h3>
-                <p>Skip the endless messaging. Have meaningful conversations face-to-face where real chemistry happens.</p>
-            </div>
-            <div class="pillar pillar-zoom">
-                <div class="pillar-icon">👋</div>
-                <h3>No Swiping</h3>
-                <p>Forget the superficial left-right game. Curated introductions based on compatibility and values.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission Section -->
-    <section class="mission-section">
-        <div class="mission-content">
-            <h2>Mission</h2>
-            <ol class="mission-list">
-                <li>Get young people back to real life, meeting people and growing as a person</li>
-                <li>Create an app for personal growth through meeting others, not finding the "perfect match"</li>
-                <li>End the online dating inequality</li>
-                <li>Verify people using the app with proper ID checks</li>
-                <li>Encourage meaningful conversations instead of using apps</li>
-                <li><strong>So, why not remove these elements and bring back spontaneity through UKDating</strong>
-                    <ul>
-                        <li><strong>For women:</strong> To get rid of the criminal catfish and criminal subscription<br>The "better than" status isn't what men as they are "the better man" online. A grounded subscription gets rid of that, the IRL connection.</li>
-                        <li><strong>For men:</strong> To get dates, and grow their confidence.<br>To get out of the criminal subscription</li>
-                    </ul>
-                </li>
-            </ol>
             
-            <div class="mission-buttons">
-                <a href="<?php echo home_url('/join'); ?>" class="btn-primary">Get Started Today</a>
-                <a href="#blog" class="btn-secondary">Learn More</a>
+            <div class="bento-box bento-tall glass-panel">
+                <div class="bento-content">
+                    <div class="bento-icon">📅</div>
+                    <h3>Curated Blind<br>Dates</h3>
+                    <p>We do the heavy lifting. Tell us your availability, and we set up the venue and time.</p>
+                </div>
             </div>
-        </div>
-        <div class="mission-image">
-            <div class="image-placeholder">📸</div>
+            
+            <div class="bento-box glass-panel">
+                <div class="bento-content">
+                    <div class="bento-icon">💬</div>
+                    <h3>Zero Texting</h3>
+                    <p>Skip the small talk and ghosting.</p>
+                </div>
+            </div>
+            
+            <div class="bento-box glass-panel">
+                <div class="bento-content">
+                    <div class="bento-icon">👋</div>
+                    <h3>No Swiping</h3>
+                    <p>Quality over endless quantity.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="blog-section">
-        <h2>Popular Articles</h2>
-        <p class="blog-subtitle">Latest insights from UKDating</p>
+    <!-- Immersive Mission Section -->
+    <section id="mission" class="mission-section immersive-mission">
+        <div class="mission-parallax-bg"></div>
+        <div class="mission-overlay-content">
+            <h2 class="fade-in-scroll">Our Mission</h2>
+            <div class="mission-statement fade-in-scroll">
+                <h3>Bring Back Spontaneity</h3>
+                <p>We are ending the online dating inequality. For women, it means getting rid of criminal catfish and dangerous subscriptions. For men, it means actually getting dates and growing confidence in the real world.</p>
+                <p>Grounded in reality. Meet people, have real conversations, and grow as a person without the pressure of finding the "perfect" digital match.</p>
+            </div>
+            
+            <div class="mission-buttons fade-in-scroll">
+                <a href="<?php echo home_url('/join'); ?>" class="btn-primary">Join the Movement</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horizontal Blog Section -->
+    <section id="blog" class="blog-section modern-blog">
+        <div class="blog-header">
+            <h2>UKDating Insights</h2>
+            <p>Knowledge for the modern dating world</p>
+        </div>
         
-        <div class="blog-container">
-            <article class="blog-card blog-fade-in">
-                <div class="blog-image">📝</div>
-                <div class="blog-content">
-                    <h3>Why In-Person Dating Works Better</h3>
-                    <p class="blog-meta">March 5, 2026</p>
-                    <p>Discover the science behind face-to-face connections and why they lead to more meaningful relationships.</p>
-                    <a href="#" class="blog-link">Read More →</a>
-                </div>
-            </article>
+        <div class="blog-scroller">
+            <div class="blog-track">
+                <article class="blog-card glass-panel">
+                    <div class="blog-image">📝</div>
+                    <div class="blog-content">
+                        <h3>Why In-Person Dating Works Better</h3>
+                        <p class="blog-meta">March 5, 2026</p>
+                        <p>Discover the science behind face-to-face connections.</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
 
-            <article class="blog-card blog-fade-in">
-                <div class="blog-image">💭</div>
-                <div class="blog-content">
-                    <h3>The Impact of Digital Dating</h3>
-                    <p class="blog-meta">February 28, 2026</p>
-                    <p>Exploring how apps have changed dating culture and why people are seeking alternatives for authentic connections.</p>
-                    <a href="#" class="blog-link">Read More →</a>
-                </div>
-            </article>
+                <article class="blog-card glass-panel">
+                    <div class="blog-image">💭</div>
+                    <div class="blog-content">
+                        <h3>The Impact of Digital Dating</h3>
+                        <p class="blog-meta">February 28, 2026</p>
+                        <p>Exploring how apps have changed dating culture.</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
 
-            <article class="blog-card blog-fade-in">
-                <div class="blog-image">❤️</div>
-                <div class="blog-content">
-                    <h3>Finding Your Perfect Match IRL</h3>
-                    <p class="blog-meta">February 20, 2026</p>
-                    <p>Learn how UKDating uses intelligent matching to find compatible partners in your area.</p>
-                    <a href="#" class="blog-link">Read More →</a>
-                </div>
-            </article>
+                <article class="blog-card glass-panel">
+                    <div class="blog-image">❤️</div>
+                    <div class="blog-content">
+                        <h3>Finding Your Perfect Match IRL</h3>
+                        <p class="blog-meta">February 20, 2026</p>
+                        <p>Learn how UKDating uses intelligent matching.</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
 
-            <article class="blog-card blog-fade-in">
-                <div class="blog-image">⭐</div>
-                <div class="blog-content">
-                    <h3>Success Stories: Love in the Real World</h3>
-                    <p class="blog-meta">February 15, 2026</p>
-                    <p>Read inspiring stories from couples who found each other through UKDating and built lasting relationships.</p>
-                    <a href="#" class="blog-link">Read More →</a>
-                </div>
-            </article>
-
-            <article class="blog-card blog-fade-in">
-                <div class="blog-image">💡</div>
-                <div class="blog-content">
-                    <h3>Dating Tips for the Modern Age</h3>
-                    <p class="blog-meta">February 10, 2026</p>
-                    <p>Practical advice on how to navigate the dating world and make genuine connections with intention.</p>
-                    <a href="#" class="blog-link">Read More →</a>
-                </div>
-            </article>
-
-            <article class="blog-card blog-fade-in">
-                <div class="blog-image">🎯</div>
-                <div class="blog-content">
-                    <h3>Our Mission for Real Connections</h3>
-                    <p class="blog-meta">February 5, 2026</p>
-                    <p>Understand why we created UKDating and how it's revolutionizing the way people meet.</p>
-                    <a href="#" class="blog-link">Read More →</a>
-                </div>
-            </article>
+                <article class="blog-card glass-panel">
+                    <div class="blog-image">⭐</div>
+                    <div class="blog-content">
+                        <h3>Success Stories: Love in the Real World</h3>
+                        <p class="blog-meta">February 15, 2026</p>
+                        <p>Inspiring stories from couples who found each other.</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 
