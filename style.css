@@ -11,9 +11,10 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #110b14;
-    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #0a0a0a;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -41,8 +42,10 @@ body {
 
 .site-logo {
     font-size: 1.5rem;
-    font-weight: 700;
-    color: #ff4b2b;
+    font-weight: 800;
+    color: #ffc629;
+    /* Bumble Yellow */
+    letter-spacing: -0.5px;
 }
 
 .header-nav {
@@ -51,20 +54,19 @@ body {
 }
 
 .join-btn {
-    background-color: #ff416c;
-    color: white;
+    background-color: #ffc629;
+    color: #0a0a0a;
     padding: 10px 24px;
-    border-radius: 20px;
+    border-radius: 40px;
     text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.2s ease;
     display: inline-block;
 }
 
 .join-btn:hover {
-    background-color: #e63946;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4);
+    background-color: #e0ae24;
+    transform: scale(1.02);
 }
 
 /* Canvas for the starry background */
@@ -125,12 +127,11 @@ body {
 }
 
 h1 {
-    color: #ff4b2b;
-    /* Vibrant red text */
+    color: #0a0a0a;
     font-size: 4.5rem;
     margin: 0 0 15px 0;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
 }
 
 p {
@@ -138,38 +139,38 @@ p {
     max-width: 650px;
     margin: 0 0 40px 0;
     line-height: 1.6;
-    color: #d1d5db;
+    color: #4b5563;
+    /* Dark gray */
 }
 
 .cta-btn {
-    background-color: #ff416c;
-    /* Premium pink button */
-    color: white;
+    background-color: #ffc629;
+    color: #0a0a0a;
     padding: 16px 36px;
     text-decoration: none;
     font-size: 1.2rem;
-    font-weight: 600;
-    border-radius: 40px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4);
+    font-weight: 700;
+    border-radius: 50px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    display: inline-block;
+    border: none;
 }
 
 .cta-btn:hover {
-    background-color: #e63946;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 65, 108, 0.6);
+    background-color: #e0ae24;
+    transform: scale(1.02);
 }
 
 /***************************************
- * Modern Split Hero Section
+ * Clean Bright Hero Section (Bumble Style)
  ***************************************/
-.modern-hero {
+.bumble-hero {
     position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 80px 20px 20px;
-    background: radial-gradient(circle at 100% 50%, rgba(255, 65, 108, 0.1) 0%, rgba(17, 11, 20, 1) 50%);
+    background: #ffffff;
     overflow: hidden;
 }
 
@@ -178,7 +179,7 @@ p {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
     gap: 50px;
     z-index: 2;
@@ -186,63 +187,50 @@ p {
 
 .hero-content {
     flex: 1;
-    max-width: 650px;
+    max-width: 600px;
     text-align: left;
 }
 
 .hero-content h1 {
-    font-size: 5.5rem;
-    line-height: 1.1;
+    font-size: 5rem;
+    line-height: 1.05;
     margin: 20px 0;
-    background: linear-gradient(135deg, #fff 0%, #ff4b2b 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #0a0a0a;
+    background: none;
+    -webkit-text-fill-color: initial;
 }
 
 .hero-content p {
-    font-size: 1.25rem;
-    color: #9ca3af;
+    font-size: 1.3rem;
+    color: #4b5563;
     margin-bottom: 40px;
-    max-width: 550px;
+    font-weight: 400;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 50px;
 }
 
-.glass-btn {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: white;
+.bumble-btn {
+    background-color: #ffc629;
+    color: #0a0a0a;
 }
 
-.glass-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.2);
+.bumble-btn:hover {
+    background-color: #e0ae24;
 }
 
-.hero-stats {
-    display: flex;
-    gap: 40px;
-    padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+.outline-btn {
+    background: transparent;
+    border: 2px solid #0a0a0a;
+    color: #0a0a0a;
 }
 
-.stat strong {
-    display: block;
-    font-size: 2rem;
-    color: #ff416c;
-}
-
-.stat span {
-    font-size: 0.9rem;
-    color: #6b7280;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.outline-btn:hover {
+    background: #f3f4f6;
+    transform: scale(1.02);
 }
 
 .hero-visual {
@@ -267,7 +255,8 @@ p {
     position: absolute;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(255, 65, 108, 0.2) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 198, 41, 0.4) 0%, transparent 70%);
+    /* Bumble Yellow Glow */
     border-radius: 50%;
     z-index: 1;
     animation: pulseGlow 4s infinite alternate;
@@ -286,16 +275,15 @@ p {
 }
 
 /***************************************
- * Alternating Zig-Zag Features
+ * Simple Friendly Features (Bumble Style)
  ***************************************/
-.modern-features {
+.bumble-features {
     padding: 120px 20px;
-    background: #110b14;
+    background: #f9f9f9;
+    /* Off-white for section break */
     display: flex;
     flex-direction: column;
     gap: 150px;
-    max-width: 1400px;
-    margin: 0 auto;
 }
 
 .feature-row {
@@ -303,6 +291,9 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .feature-row.reverse {
@@ -311,19 +302,28 @@ p {
 
 .feature-text {
     flex: 1;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 .feature-text h2 {
     font-size: 3rem;
     margin: 20px 0;
-    line-height: 1.2;
+    line-height: 1.1;
+    color: #0a0a0a;
+    font-weight: 800;
+}
+
+.feature-text p {
+    font-size: 1.25rem;
+    color: #4b5563;
+    line-height: 1.6;
 }
 
 .feature-image {
     flex: 1;
     height: 500px;
-    border-radius: 24px;
+    border-radius: 40px;
+    /* Very rounded edges */
     position: relative;
     overflow: hidden;
     display: flex;
@@ -331,11 +331,16 @@ p {
     justify-content: center;
 }
 
-.glass-panel {
-    background: rgba(30, 20, 35, 0.4);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+.soft-card {
+    background: #ffffff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.05);
+    /* Soft, friendly shadow */
+    border: 1px solid #f0f0f0;
+}
+
+.large-icon {
+    font-size: 8rem;
+    filter: drop-shadow(0 10px 20px rgba(255, 198, 41, 0.3));
 }
 
 /* Mock UI Elements for Features */
@@ -428,55 +433,55 @@ p {
 }
 
 /***************************************
- * Immersive Mission Section
+ * Bold Statement Mission Section (Bumble Style)
  ***************************************/
-.immersive-mission {
-    position: relative;
+.bumble-mission {
     padding: 150px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background: #ffc629;
+    /* Solid Bumble Yellow Background */
+    color: #0a0a0a;
 }
 
-.mission-parallax-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(rgba(17, 11, 20, 0.9), rgba(17, 11, 20, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%231a0e14" width="100" height="100"/><circle fill="%232d1622" cx="50" cy="50" r="2"/></svg>');
-    background-attachment: fixed;
-    z-index: 1;
-}
-
-.mission-overlay-content {
-    position: relative;
-    z-index: 2;
+.mission-content {
     max-width: 800px;
 }
 
-.mission-overlay-content h2 {
-    font-size: 4rem;
+.mission-content h2 {
+    font-size: 4.5rem;
     margin-bottom: 30px;
-    color: #ff4b2b;
-}
-
-.mission-statement h3 {
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 20px;
+    color: #0a0a0a;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
 }
 
 .mission-statement p {
-    font-size: 1.25rem;
-    line-height: 1.8;
-    color: #d1d5db;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #0a0a0a;
+    /* High contrast black on yellow */
+    font-weight: 500;
     margin: 0 auto 30px;
+    max-width: 700px;
 }
 
 .mission-buttons {
     margin-top: 50px;
+}
+
+/* Modifier for buttons on yellow background */
+.mission-buttons .bumble-btn {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+.mission-buttons .bumble-btn:hover {
+    background-color: #2b2b2b;
+    color: #ffc629;
 }
 
 /* Articles Section */
@@ -603,18 +608,19 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(75, 85, 99, 0.3);
-    border: 1px solid rgba(75, 85, 99, 0.4);
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
     border-radius: 50%;
-    color: #3b82f6;
+    color: #0a0a0a;
     text-decoration: none;
     transition: all 0.3s ease;
     font-size: 1rem;
 }
 
 .social-icon:hover {
-    background: rgba(255, 75, 43, 0.2);
-    border-color: #ff4b2b;
+    background: #ffc629;
+    border-color: #ffc629;
+    color: #0a0a0a;
     transform: translateY(-3px);
 }
 
@@ -691,8 +697,8 @@ p {
 .footer-bottom {
     text-align: center;
     padding-top: 40px;
-    border-top: 1px solid rgba(75, 85, 99, 0.2);
-    color: #9ca3af;
+    border-top: 1px solid #e5e7eb;
+    color: #4b5563;
     font-size: 0.9rem;
 }
 
@@ -759,7 +765,7 @@ p {
     z-index: 2;
     min-height: 100vh;
     padding: 80px 20px;
-    background: linear-gradient(180deg, rgba(10, 10, 12, 0) 0%, rgba(10, 10, 12, 0.95) 100%);
+    background: #f9f9f9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -771,23 +777,23 @@ p {
 }
 
 .join-form-wrapper {
-    background: rgba(20, 30, 48, 0.7);
-    border: 1px solid rgba(75, 85, 99, 0.3);
-    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 40px;
     padding: 50px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(255, 65, 108, 0.15);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.05);
 }
 
 .join-form-wrapper h1 {
-    color: #3b82f6;
+    color: #0a0a0a;
     font-size: 2.5rem;
     margin: 0 0 10px 0;
     text-align: center;
+    font-weight: 800;
 }
 
 .join-subtitle {
-    color: #9ca3af;
+    color: #4b5563;
     font-size: 1.1rem;
     text-align: center;
     margin-bottom: 40px;
@@ -822,7 +828,7 @@ p {
 }
 
 .form-group label {
-    color: #e5e7eb;
+    color: #0a0a0a;
     font-size: 0.95rem;
     font-weight: 600;
     margin-bottom: 8px;
@@ -832,11 +838,11 @@ p {
 .form-group input,
 .form-group select,
 .form-group textarea {
-    background: rgba(31, 41, 55, 0.8);
-    border: 1px solid rgba(75, 85, 99, 0.4);
+    background: #f9f9f9;
+    border: 1px solid #d1d5db;
     border-radius: 8px;
     padding: 12px 15px;
-    color: white;
+    color: #0a0a0a;
     font-size: 1rem;
     font-family: inherit;
     transition: all 0.3s ease;
@@ -846,9 +852,9 @@ p {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #ff4b2b;
-    background: rgba(31, 41, 55, 0.95);
-    box-shadow: 0 0 0 3px rgba(255, 75, 43, 0.1);
+    border-color: #ffc629;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(255, 198, 41, 0.2);
 }
 
 .form-group textarea {
@@ -885,27 +891,26 @@ p {
 }
 
 .form-submit-btn {
-    background-color: #ff416c;
-    color: white;
+    background-color: #ffc629;
+    color: #0a0a0a;
     padding: 14px 30px;
     border: none;
-    border-radius: 25px;
+    border-radius: 40px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease;
     margin-top: 10px;
 }
 
 .form-submit-btn:hover {
-    background-color: #e63946;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 65, 108, 0.4);
+    background-color: #e0ae24;
+    transform: scale(1.02);
 }
 
 .form-note {
     text-align: center;
-    color: #9ca3af;
+    color: #6b7280;
     font-size: 0.9rem;
     margin: 0;
 }
@@ -915,7 +920,7 @@ p {
     position: relative;
     z-index: 2;
     padding: 80px 20px;
-    background: linear-gradient(180deg, rgba(10, 10, 12, 0.95) 0%, rgba(10, 10, 12, 1) 100%);
+    background: #ffffff;
 }
 
 .privacy-container {
@@ -924,30 +929,28 @@ p {
 }
 
 .privacy-section h2 {
-    color: white;
+    color: #0a0a0a;
     font-size: 2.5rem;
     margin-bottom: 40px;
     text-align: center;
-    animation: fadeIn 1s ease-out;
 }
 
 .privacy-header {
-    background: rgba(20, 30, 48, 0.6);
-    border: 1px solid rgba(75, 85, 99, 0.3);
-    border-radius: 15px;
+    background: #f9f9f9;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
     padding: 30px;
     margin-bottom: 40px;
-    backdrop-filter: blur(10px);
 }
 
 .privacy-header h3 {
-    color: #3b82f6;
+    color: #0a0a0a;
     font-size: 1.5rem;
     margin: 0 0 10px 0;
 }
 
 .privacy-header p {
-    color: #d1d5db;
+    color: #4b5563;
     margin: 5px 0;
 }
 
@@ -958,27 +961,27 @@ p {
 }
 
 .privacy-item {
-    background: rgba(31, 41, 55, 0.5);
-    border-left: 4px solid #007520;
-    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid #ffc629;
+    border-radius: 20px;
     padding: 25px;
-    animation: slideUp 0.6s ease-out;
 }
 
 .privacy-item h4 {
-    color: #3b82f6;
+    color: #0a0a0a;
     font-size: 1.3rem;
     margin: 0 0 15px 0;
 }
 
 .privacy-item p {
-    color: #d1d5db;
+    color: #4b5563;
     line-height: 1.8;
     margin: 10px 0;
 }
 
 .privacy-item ul {
-    color: #d1d5db;
+    color: #4b5563;
     padding-left: 25px;
     margin: 15px 0;
 }
@@ -989,8 +992,9 @@ p {
 }
 
 .privacy-item a {
-    color: #3b82f6;
-    text-decoration: none;
+    color: #0a0a0a;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 .privacy-item a:hover {

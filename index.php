@@ -5,22 +5,18 @@
 get_header();
 ?>
 
-    <!-- Modern Split Hero Section -->
-    <section class="hero-section modern-hero">
+    <!-- Clean Bright Hero Section -->
+    <section class="hero-section bumble-hero">
         <div class="hero-container">
             <div class="hero-content">
                 <div class="logo-wrapper">
                     <div class="logo-heart">♥</div>
                 </div>
-                <h1>UKDating</h1>
-                <p>We set up users on blind dates, matching people based on their availability, sexual orientation, and location. Experience the next generation of genuine connection.</p>
+                <h1>Find your person.</h1>
+                <p>We set up users on blind dates. No endless swiping. No ghosting. Just genuine face-to-face connections based on your availability and location.</p>
                 <div class="hero-buttons">
-                    <a href="<?php echo home_url('/join'); ?>" class="cta-btn primary-btn">Join the Revolution</a>
-                    <a href="#mission" class="cta-btn secondary-btn glass-btn">Our Mission</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat"><strong>50k+</strong> <span>Connections</span></div>
-                    <div class="stat"><strong>120+</strong> <span>Cities</span></div>
+                    <a href="<?php echo home_url('/join'); ?>" class="cta-btn primary-btn bumble-btn">Join the club</a>
+                    <a href="#mission" class="cta-btn secondary-btn outline-btn">How it works</a>
                 </div>
             </div>
             
@@ -32,158 +28,97 @@ get_header();
         </div>
     </section>
 
-    <!-- Alternating Zig-Zag Features -->
-    <section class="features-section modern-features">
+    <!-- Simple Friendly Features -->
+    <section class="features-section bumble-features">
         <div class="feature-row">
-            <div class="feature-text fade-in-scroll">
-                <div class="feature-icon">🌍</div>
-                <h2>Verified Real Profiles</h2>
+            <div class="feature-text">
+                <h2>Verified real people</h2>
                 <p>We believe in genuine human connection, not digital personas. Every user is verified to ensure you meet real people, not curated or fake profiles.</p>
             </div>
-            <div class="feature-image glass-panel fade-in-scroll">
-                <div class="mock-ui">
-                    <div class="mock-header"></div>
-                    <div class="mock-body mock-verified"></div>
-                </div>
+            <div class="feature-image soft-card">
+                <div class="feature-icon large-icon">🌍</div>
             </div>
         </div>
         
         <div class="feature-row reverse">
-            <div class="feature-text fade-in-scroll">
-                <div class="feature-icon">💬</div>
-                <h2>Meaningful Conversations</h2>
-                <p>Skip the endless messaging. Have meaningful conversations face-to-face where real chemistry happens organically and naturally.</p>
+            <div class="feature-text">
+                <h2>Meaningful conversations</h2>
+                <p>Skip the endless messaging. Have meaningful conversations face-to-face where real chemistry happens naturally.</p>
             </div>
-            <div class="feature-image glass-panel fade-in-scroll">
-                <div class="mock-ui">
-                    <div class="mock-bubbles">
-                        <div class="mock-bubble left"></div>
-                        <div class="mock-bubble right"></div>
-                        <div class="mock-bubble left"></div>
-                    </div>
-                </div>
+            <div class="feature-image soft-card">
+                <div class="feature-icon large-icon">💬</div>
             </div>
         </div>
 
         <div class="feature-row">
-            <div class="feature-text fade-in-scroll">
-                <div class="feature-icon">⚙️</div>
-                <h2>Intelligent Matching</h2>
-                <p>Forget the superficial left-right game. We provide curated introductions based on deep compatibility, availability, and shared values.</p>
+            <div class="feature-text">
+                <h2>Dates arranged for you</h2>
+                <p>Forget the superficial left-right game. We provide curated introductions based on deep compatibility, and we set up the time and place.</p>
             </div>
-            <div class="feature-image glass-panel fade-in-scroll">
-                <div class="mock-ui">
-                    <div class="mock-radar"></div>
-                </div>
+            <div class="feature-image soft-card">
+                <div class="feature-icon large-icon">📅</div>
             </div>
         </div>
     </section>
 
-    <!-- Bento Box Pillars Section -->
-    <section class="bento-section">
-        <div class="bento-header">
-            <h2>The UKDating Difference</h2>
-            <p>Our core philosophy for modern romance</p>
-        </div>
-        
-        <div class="bento-grid">
-            <div class="bento-box bento-large glass-panel">
-                <div class="bento-content">
-                    <div class="bento-icon">👥</div>
-                    <h3>No Curated Profiles</h3>
-                    <p>Meet real people, exactly as they are. We strip away the digital filters to bring you genuine face-to-face connections from day one.</p>
-                </div>
+    <!-- Removed Bento Box since Bumble style doesn't fit the dark complex grid. Replaced with simple value props -->
+    
+    <!-- Bold Statement Mission Section -->
+    <section id="mission" class="mission-section bumble-mission">
+        <div class="mission-content">
+            <h2>Make the first move in real life.</h2>
+            <div class="mission-statement">
+                <p>We are ending online dating inequality. For women, it means getting rid of catfish and dangerous subscriptions. For men, it means actually getting dates and growing confidence in the real world.</p>
+                <p>Grounded in reality. Meet people, have real conversations, and grow as a person.</p>
             </div>
             
-            <div class="bento-box bento-tall glass-panel">
-                <div class="bento-content">
-                    <div class="bento-icon">📅</div>
-                    <h3>Curated Blind<br>Dates</h3>
-                    <p>We do the heavy lifting. Tell us your availability, and we set up the venue and time.</p>
-                </div>
-            </div>
-            
-            <div class="bento-box glass-panel">
-                <div class="bento-content">
-                    <div class="bento-icon">💬</div>
-                    <h3>Zero Texting</h3>
-                    <p>Skip the small talk and ghosting.</p>
-                </div>
-            </div>
-            
-            <div class="bento-box glass-panel">
-                <div class="bento-content">
-                    <div class="bento-icon">👋</div>
-                    <h3>No Swiping</h3>
-                    <p>Quality over endless quantity.</p>
-                </div>
+            <div class="mission-buttons">
+                <a href="<?php echo home_url('/join'); ?>" class="cta-btn primary-btn bumble-btn">Get Started</a>
             </div>
         </div>
     </section>
 
-    <!-- Immersive Mission Section -->
-    <section id="mission" class="mission-section immersive-mission">
-        <div class="mission-parallax-bg"></div>
-        <div class="mission-overlay-content">
-            <h2 class="fade-in-scroll">Our Mission</h2>
-            <div class="mission-statement fade-in-scroll">
-                <h3>Bring Back Spontaneity</h3>
-                <p>We are ending the online dating inequality. For women, it means getting rid of criminal catfish and dangerous subscriptions. For men, it means actually getting dates and growing confidence in the real world.</p>
-                <p>Grounded in reality. Meet people, have real conversations, and grow as a person without the pressure of finding the "perfect" digital match.</p>
-            </div>
-            
-            <div class="mission-buttons fade-in-scroll">
-                <a href="<?php echo home_url('/join'); ?>" class="btn-primary">Join the Movement</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Horizontal Blog Section -->
-    <section id="blog" class="blog-section modern-blog">
+    <!-- Simple Blog Section -->
+    <section id="blog" class="blog-section bumble-blog">
         <div class="blog-header">
-            <h2>UKDating Insights</h2>
-            <p>Knowledge for the modern dating world</p>
+            <h2>Dating Insights</h2>
         </div>
         
         <div class="blog-scroller">
             <div class="blog-track">
-                <article class="blog-card glass-panel">
-                    <div class="blog-image">📝</div>
+                <article class="blog-card plain-card">
+                    <div class="blog-image light-bg">📝</div>
                     <div class="blog-content">
                         <h3>Why In-Person Dating Works Better</h3>
                         <p class="blog-meta">March 5, 2026</p>
-                        <p>Discover the science behind face-to-face connections.</p>
-                        <a href="#" class="blog-link">Read More →</a>
+                        <a href="#" class="blog-link">Read article</a>
                     </div>
                 </article>
 
-                <article class="blog-card glass-panel">
-                    <div class="blog-image">💭</div>
+                <article class="blog-card plain-card">
+                    <div class="blog-image light-bg">💭</div>
                     <div class="blog-content">
                         <h3>The Impact of Digital Dating</h3>
                         <p class="blog-meta">February 28, 2026</p>
-                        <p>Exploring how apps have changed dating culture.</p>
-                        <a href="#" class="blog-link">Read More →</a>
+                        <a href="#" class="blog-link">Read article</a>
                     </div>
                 </article>
 
-                <article class="blog-card glass-panel">
-                    <div class="blog-image">❤️</div>
+                <article class="blog-card plain-card">
+                    <div class="blog-image light-bg">❤️</div>
                     <div class="blog-content">
                         <h3>Finding Your Perfect Match IRL</h3>
                         <p class="blog-meta">February 20, 2026</p>
-                        <p>Learn how UKDating uses intelligent matching.</p>
-                        <a href="#" class="blog-link">Read More →</a>
+                        <a href="#" class="blog-link">Read article</a>
                     </div>
                 </article>
 
-                <article class="blog-card glass-panel">
-                    <div class="blog-image">⭐</div>
+                <article class="blog-card plain-card">
+                    <div class="blog-image light-bg">⭐</div>
                     <div class="blog-content">
                         <h3>Success Stories: Love in the Real World</h3>
                         <p class="blog-meta">February 15, 2026</p>
-                        <p>Inspiring stories from couples who found each other.</p>
-                        <a href="#" class="blog-link">Read More →</a>
+                        <a href="#" class="blog-link">Read article</a>
                     </div>
                 </article>
             </div>
@@ -270,7 +205,7 @@ get_header();
                     
                     if (dist < 180) {
                         const intensity = 1 - (dist / 180);
-                        ctx.strokeStyle = `rgba(255, 65, 108, ${intensity * 0.6 * p1.scale})`;
+                        ctx.strokeStyle = `rgba(255, 198, 41, ${intensity * 0.6 * p1.scale})`; // Yellow connection line
                         ctx.beginPath();
                         ctx.moveTo(p1.projX, p1.projY);
                         ctx.lineTo(p2.projX, p2.projY);
@@ -288,11 +223,12 @@ get_header();
                 ctx.arc(p.projX, p.projY, radius, 0, Math.PI * 2);
                 
                 if (p.isActive) {
-                    ctx.fillStyle = `rgba(255, 75, 43, ${alpha})`;
-                    ctx.shadowBlur = 15;
-                    ctx.shadowColor = '#ff416c';
+                    const pulse = Math.sin(p.pulseP) * 0.2 + 0.3; // Adjusted pulse for better visibility
+                    ctx.fillStyle = `rgba(255, 198, 41, ${alpha + pulse})`; // Bumble Yellow
+                    ctx.shadowColor = `rgba(255, 198, 41, ${alpha})`;
+                    ctx.shadowBlur = 15; // Kept original blur value
                 } else {
-                    ctx.fillStyle = `rgba(200, 200, 255, ${alpha * 0.4})`;
+                    ctx.fillStyle = `rgba(156, 163, 175, ${alpha * 0.5})`; // Soft gray
                     ctx.shadowBlur = 0;
                 }
                 ctx.fill();

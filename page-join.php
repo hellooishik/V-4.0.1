@@ -326,7 +326,7 @@ get_header();
                     
                     if (dist < 180) {
                         const intensity = 1 - (dist / 180);
-                        ctx.strokeStyle = `rgba(255, 65, 108, ${intensity * 0.6 * p1.scale})`;
+                        ctx.strokeStyle = `rgba(255, 198, 41, ${intensity * 0.6 * p1.scale})`; // Yellow connection line
                         ctx.beginPath();
                         ctx.moveTo(p1.projX, p1.projY);
                         ctx.lineTo(p2.projX, p2.projY);
@@ -344,11 +344,12 @@ get_header();
                 ctx.arc(p.projX, p.projY, radius, 0, Math.PI * 2);
                 
                 if (p.isActive) {
-                    ctx.fillStyle = `rgba(255, 75, 43, ${alpha})`;
+                    const pulse = Math.sin(p.pulseP) * 0.2 + 0.3; // Adjusted pulse for better visibility
+                    ctx.fillStyle = `rgba(255, 198, 41, ${alpha + pulse})`; // Bumble Yellow
+                    ctx.shadowColor = `rgba(255, 198, 41, ${alpha})`;
                     ctx.shadowBlur = 15;
-                    ctx.shadowColor = '#ff416c';
                 } else {
-                    ctx.fillStyle = `rgba(200, 200, 255, ${alpha * 0.4})`;
+                    ctx.fillStyle = `rgba(156, 163, 175, ${alpha * 0.5})`; // Soft gray
                     ctx.shadowBlur = 0;
                 }
                 ctx.fill();
