@@ -78,53 +78,7 @@ get_header();
         </div>
     </section>
 
-    <!-- Simple Blog Section -->
-    <section id="blog" class="blog-section bumble-blog">
-        <div class="blog-header">
-            <h2>Dating Insights</h2>
-        </div>
-        
-        <div class="blog-scroller">
-            <div class="blog-track">
-                <article class="blog-card plain-card">
-                    <div class="blog-image light-bg">📝</div>
-                    <div class="blog-content">
-                        <h3>Why In-Person Dating Works Better</h3>
-                        <p class="blog-meta">March 5, 2026</p>
-                        <a href="#" class="blog-link">Read article</a>
-                    </div>
-                </article>
-
-                <article class="blog-card plain-card">
-                    <div class="blog-image light-bg">💭</div>
-                    <div class="blog-content">
-                        <h3>The Impact of Digital Dating</h3>
-                        <p class="blog-meta">February 28, 2026</p>
-                        <a href="#" class="blog-link">Read article</a>
-                    </div>
-                </article>
-
-                <article class="blog-card plain-card">
-                    <div class="blog-image light-bg">❤️</div>
-                    <div class="blog-content">
-                        <h3>Finding Your Perfect Match IRL</h3>
-                        <p class="blog-meta">February 20, 2026</p>
-                        <a href="#" class="blog-link">Read article</a>
-                    </div>
-                </article>
-
-                <article class="blog-card plain-card">
-                    <div class="blog-image light-bg">⭐</div>
-                    <div class="blog-content">
-                        <h3>Success Stories: Love in the Real World</h3>
-                        <p class="blog-meta">February 15, 2026</p>
-                        <a href="#" class="blog-link">Read article</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
+    
     <script>
         const canvas = document.getElementById('canvas-stars');
         const ctx = canvas.getContext('2d');

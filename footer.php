@@ -1,12 +1,7 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-content">
-            <!-- Articles Section Header -->
-            <div class="footer-header">
-                <span class="section-label">Blog</span>
-                <h2>Popular Articles</h2>
-            </div>
-
+    
             <!-- Footer Columns -->
             <div class="footer-columns">
                 <!-- Newsletter Column -->
