@@ -1,197 +1,134 @@
 <?php
 /**
- * Main Template - UKDating Premium Theme
+ * Main Template - UKDating Cloned Design
  */
 get_header();
 ?>
 
-    <!-- Hero Section -->
-    <section class="hero-dark">
-        <div class="hero-content">
-            <h1>Meet Real People, Real Connections</h1>
-            <p>Stop endless swiping. UKDating connects you with verified matches through curated, in-person dates arranged just for you.</p>
-            <div class="hero-buttons">
-                <a href="<?php echo home_url('/join'); ?>" class="primary-btn">Get Started Now</a>
-                <a href="#how-it-works" class="secondary-btn">Learn How</a>
+<!-- Hero + search -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>New Places, Unforgettable Dating.</h1>
+        <p>Still looking for your significant other? UKDating is the place for you! Join us now to meet single men and women across the world.</p>
+    </div>
+    <div class="hero-image"></div>
+    <div class="search-box fade-in">
+        <form class="search-form">
+            <div class="field">
+                <label for="iam">I am</label>
+                <select id="iam">
+                    <option>Man</option>
+                    <option>Woman</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="looking">Looking for</label>
+                <select id="looking">
+                    <option>Woman</option>
+                    <option>Man</option>
+                </select>
+            </div>
+            <div class="field age">
+                <label>Age</label>
+                <select><option>18</option></select> &ndash; <select><option>30</option></select>
+            </div>
+            <div class="field country">
+                <label for="country">Country</label>
+                <select id="country"><option>Choose your country</option></select>
+            </div>
+            <button type="submit" class="primary-btn">Find Your Partner</button>
+        </form>
+    </div>
+</section>
+
+<!-- Profiles grid -->
+<section class="profiles-section fade-in">
+    <h2 class="section-title">Only True People</h2>
+    <p class="section-subtitle">Every user registered on UKDating is verified via photo and mobile phone so you don't have to worry how real or fake anyone is.</p>
+    <div class="profiles-grid">
+        <?php for ($i = 1; $i <= 6; $i++): ?>
+        <div class="profile-card">
+            <div class="profile-img" style="background-image:url('https://source.unsplash.com/collection/891/300x300?sig=<?php echo $i; ?>');"></div>
+            <div class="profile-info">
+                <h3>Sample Name</h3>
+                <span class="active">active <?php echo rand(1,10); ?> days ago</span>
             </div>
         </div>
-    </section>
+        <?php endfor; ?>
+    </div>
+    <div class="center"><a href="#" class="secondary-btn">View More</a></div>
+</section>
 
-    <!-- Featured Profiles Section -->
-    <section class="featured-section fade-in">
-        <div class="section-header">
-            <h2>Featured Matches</h2>
-            <p>Real people looking for real connections. Every profile is verified.</p>
-        </div>
-        <div class="profiles-grid">
-            <div class="profile-card">
-                <div class="profile-image">
-                    <div class="profile-badge"><span class="badge-icon">✓</span> Verified</div>
+<!-- Why Choose -->
+<section class="why-section fade-in">
+    <div class="why-content">
+        <div class="why-text">
+            <h2>Why Choose GO</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="icon">👤</div>
+                    <h4>Simple to Use</h4>
+                    <p>Join in one step: select your and your partner's gender, age, and location, and you're all set!</p>
                 </div>
-                <div class="profile-info">
-                    <h3 class="profile-name">Emma, 26</h3>
-                    <p class="profile-desc">Creative professional, loves travel and good conversation.</p>
+                <div class="feature">
+                    <div class="icon">❤️</div>
+                    <h4>Smart Matching</h4>
+                    <p>Our matching system is based on geolocation and interests, it helps you find the best people to meet or spend time with.</p>
                 </div>
-            </div>
-
-            <div class="profile-card">
-                <div class="profile-image">
-                    <div class="profile-badge"><span class="badge-icon">✓</span> Verified</div>
-                </div>
-                <div class="profile-info">
-                    <h3 class="profile-name">Sophie, 29</h3>
-                    <p class="profile-desc">Entrepreneur, passionate about art and meaningful connections.</p>
-                </div>
-            </div>
-
-            <div class="profile-card">
-                <div class="profile-image">
-                    <div class="profile-badge"><span class="badge-icon">✓</span> Verified</div>
-                </div>
-                <div class="profile-info">
-                    <h3 class="profile-name">Olivia, 27</h3>
-                    <p class="profile-desc">Marketing manager, adventure seeker, genuine and outgoing.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works fade-in">
-        <div class="section-header">
-            <h2>How UKDating Works</h2>
-            <p>Four simple steps to finding your match</p>
-        </div>
-        <div class="steps-container">
-            <div class="step">
-                <div class="step-number">1</div>
-                <h3>Create Your Profile</h3>
-                <p>Sign up, verify your identity, and tell us about yourself.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">2</div>
-                <h3>We Match You</h3>
-                <p>Our team carefully matches you based on compatibility and preferences.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">3</div>
-                <h3>We Arrange Your Date</h3>
-                <p>We book the venue, time, and all the logistics for you.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">4</div>
-                <h3>Enjoy Your Date</h3>
-                <p>Meet in person, have real conversation, and see where it goes.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-section fade-in">
-        <div class="section-header">
-            <h2>Success Stories</h2>
-            <p>Real people, real relationships</p>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testimonial">
-                <div class="testimonial-rating">★★★★★</div>
-                <p class="testimonial-text">"I was tired of swiping endlessly. UKDating's approach to curated dates actually worked. I met my partner on my third date!"</p>
-                <p class="testimonial-author">— Kate & James</p>
-            </div>
-
-            <div class="testimonial">
-                <div class="testimonial-rating">★★★★★</div>
-                <p class="testimonial-text">"The verification process made me feel safe. Meeting someone in person rather than messaging for weeks was exactly what I needed."</p>
-                <p class="testimonial-author">— Sophia</p>
-            </div>
-
-            <div class="testimonial">
-                <div class="testimonial-rating">★★★★★</div>
-                <p class="testimonial-text">"Great alternative to the usual dating apps. The matching algorithm actually understands what I'm looking for."</p>
-                <p class="testimonial-author">— Marcus & Lily</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Safety & Verification Section -->
-    <section class="safety-section fade-in">
-        <div class="section-header">
-            <h2>Your Safety Matters</h2>
-            <p>Trusted, verified, and secure</p>
-        </div>
-        <div class="safety-grid">
-            <div class="safety-badge">
-                <div class="safety-icon">✓</div>
-                <h3>ID Verified</h3>
-                <p>Every user is verified before joining.</p>
-            </div>
-            <div class="safety-badge">
-                <div class="safety-icon">🔒</div>
-                <h3>Data Secure</h3>
-                <p>Your information is encrypted and protected.</p>
-            </div>
-            <div class="safety-badge">
-                <div class="safety-icon">👥</div>
-                <h3>Real People</h3>
-                <p>No bots, no fake profiles, just genuine users.</p>
-            </div>
-            <div class="safety-badge">
-                <div class="safety-icon">📍</div>
-                <h3>Vetted Venues</h3>
-                <p>Dates arranged in safe, public locations.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="pricing-section fade-in">
-        <div class="section-header">
-            <h2>Choose Your Plan</h2>
-            <p>Pick the plan that works for you</p>
-        </div>
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <h3 class="pricing-name">Starter</h3>
-                <div class="pricing-price">Free</div>
-                <ul class="pricing-features">
-                    <li>Access to core features</li>
-                    <li>One match per month</li>
-                    <li>Identity verification</li>
-                </ul>
-                <div class="pricing-cta">
-                    <a href="<?php echo home_url('/join'); ?>" class="primary-btn">Get Started</a>
-                </div>
-            </div>
-
-            <div class="pricing-card featured">
-                <div class="pricing-badge">Most Popular</div>
-                <h3 class="pricing-name">Premium</h3>
-                <div class="pricing-price">£19<span>/month</span></div>
-                <ul class="pricing-features">
-                    <li>4 curated matches per month</li>
-                    <li>Priority matching algorithm</li>
-                    <li>Flexible date scheduling</li>
-                    <li>24/7 customer support</li>
-                </ul>
-                <div class="pricing-cta">
-                    <a href="<?php echo home_url('/join'); ?>" class="primary-btn">Start Now</a>
-                </div>
-            </div>
-
-            <div class="pricing-card">
-                <h3 class="pricing-name">Elite</h3>
-                <div class="pricing-price">£49<span>/month</span></div>
-                <ul class="pricing-features">
-                    <li>Unlimited curated matches</li>
-                    <li>VIP matching service</li>
-                    <li>Concierge date planning</li>
-                    <li>Premium venue access</li>
-                </ul>
-                <div class="pricing-cta">
-                    <a href="<?php echo home_url('/join'); ?>" class="primary-btn">Go Elite</a>
+                <div class="feature">
+                    <div class="icon">💬</div>
+                    <h4>Cool Community</h4>
+                    <p>Besides being a dating service, we have a supportive and understanding community that's always ready to help.</p>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="why-image">
+            <img src="https://source.unsplash.com/collection/896/600x500" alt="Couple">
+            <div class="play-button">▶</div>
+        </div>
+    </div>
+</section>
 
-<?php get_footer(); ?>
+<!-- Locations -->
+<section class="locations-section fade-in">
+    <div class="locations-grid">
+        <?php $cities = ['Amsterdam','London','Barcelona','New York','Paris'];
+        foreach ($cities as $city): ?>
+        <div class="location-card" style="background-image:url('https://source.unsplash.com/400x300/?<?php echo urlencode($city); ?>');">
+            <span><?php echo $city; ?></span>
+        </div>
+        <?php endforeach; ?>
+    </div>
+    <div class="locations-text">
+        <h2>Meet Singles in Your Area</h2>
+        <p>If you want to meet local singles for dating, companionship, friendship or even more, you have come to the right place.</p>
+        <a href="#" class="primary-btn">Find Your Partner</a>
+    </div>
+</section>
+
+<!-- Membership banner -->
+<section class="membership-banner fade-in">
+    <div class="banner-content">
+        <h2>Premium Membership</h2>
+        <p>Enjoy the benefits of our dating service's membership! Use the psychological matching to find the best people and experience other great bonuses.</p>
+        <a href="#" class="secondary-btn">View All Options</a>
+        <span class="trial">14 days for free</span>
+    </div>
+</section>
+
+<!-- Articles -->
+<section class="articles-section fade-in">
+    <h2>Dating Tips & Advice</h2>
+    <p>Here are some of our latest dating articles written by our staff. We hope these tips will help you get more confident and find what you are looking for on UKDating.</p>
+    <div class="articles-grid">
+        <?php for ($i=1; $i<=4; $i++): ?>
+        <div class="article-card">
+            <div class="article-img" style="background-image:url('https://source.unsplash.com/400x300/?couple,<?php echo $i; ?>');"></div>
+            <h4>Sample Article Title</h4>
+            <span class="date">April 24, 2019</span>
+        </div>
+        <?php endfor; ?>
+    </div>
+</section>
+
+<?php get_footer();

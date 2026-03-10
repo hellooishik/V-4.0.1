@@ -14,14 +14,18 @@
     <header class="site-header dark-header">
         <div class="header-container">
             <div class="site-logo">
-                <a href="<?php echo home_url('/'); ?>">UKDating</a>
+                <a href="<?php echo home_url('/'); ?>">
+                    <span class="logo-icon">📍</span> <span class="logo-text">GO</span>
+                </a>
             </div>
 
             <nav class="header-nav">
-                <a href="<?php echo home_url('/'); ?>" class="nav-link">Home</a>
-                <a href="<?php echo home_url('/join'); ?>" class="nav-link primary-btn">Join</a>
+                <a href="<?php echo home_url('/'); ?>" class="nav-link active">Home</a>
                 <a href="<?php echo home_url('/about'); ?>" class="nav-link">About</a>
-                <a href="<?php echo home_url('/contact'); ?>" class="nav-link">Contact</a>
+                <a href="#" class="nav-link">Community</a>
+                <a href="#" class="nav-link">Locations</a>
+                <a href="#" class="nav-link">Pages</a>
+                <a href="#" class="nav-link">Blog</a>
             </nav>
 
             <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
