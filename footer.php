@@ -1,13 +1,11 @@
     <!-- Footer -->
-    <footer class="site-footer">
+    <footer class="site-footer dark-footer">
         <div class="footer-content">
-    
-            <!-- Footer Columns -->
+
             <div class="footer-columns">
-                <!-- Newsletter Column -->
                 <div class="footer-column">
-                    <h3>Newspaper Builder</h3>
-                    <p>Watch this space</p>
+                    <h3>UKDating</h3>
+                    <p>Your real‑world connection starts here.</p>
                     <div class="social-icons">
                         <a href="#" class="social-icon twitter" title="Twitter">𝕏</a>
                         <a href="#" class="social-icon linkedin" title="LinkedIn">in</a>
@@ -15,44 +13,36 @@
                     </div>
                 </div>
 
-                <!-- About Column -->
                 <div class="footer-column">
-                    <h3>About</h3>
+                    <h3>Navigate</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Latest News</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">How we started</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="<?php echo home_url('/'); ?>">Home</a></li>
+                        <li><a href="<?php echo home_url('/join'); ?>">Join</a></li>
+                        <li><a href="<?php echo home_url('/about'); ?>">About</a></li>
+                        <li><a href="<?php echo home_url('/contact'); ?>">Contact</a></li>
                     </ul>
                 </div>
 
-                <!-- Resources Column -->
                 <div class="footer-column">
-                    <h3>Resources</h3>
+                    <h3>Support</h3>
                     <ul>
-                        <li><a href="#">Meet Our Writers</a></li>
-                        <li><a href="#">Why We Write</a></li>
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">How we started</a></li>
-                        <li><a href="#">Our Experience</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Help</a></li>
                     </ul>
                 </div>
 
-                <!-- Search Column -->
                 <div class="footer-column">
-                    <h3>Search</h3>
-                    <p>Looking for something specific? Try a search below!</p>
-                    <form class="search-form">
-                        <input type="text" placeholder="Search..." class="search-input" required>
-                        <button type="submit" class="search-btn">Search</button>
+                    <h3>Stay in touch</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email address" required>
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
 
-            <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p>&copy; 2026 UKDating | Made with love by Xnetwork</p
+                <p>&copy; 2026 UKDating | All rights reserved.</p>
             </div>
         </div>
     </footer>
